@@ -69,7 +69,7 @@ public final class Utils {
     }
 
     public static String multiBlockWarning() {
-        return "&cThis is a Multiblock machine!";
+        return "&cQuesta è una macchina multiblocco!";
     }
 
     // TODO: Deprecate custom model data method of detecting non interactables

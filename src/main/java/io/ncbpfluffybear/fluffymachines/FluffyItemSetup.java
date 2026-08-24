@@ -62,42 +62,42 @@ public final class FluffyItemSetup {
     // ItemGroups
     private static final NestedItemGroup fluffymachines = new NestedItemGroup(
             new NamespacedKey(FluffyMachines.getInstance(), "fluffymachines"),
-            new CustomItemStack(Material.SMOKER, "&6Fluffy Machines")
+            new CustomItemStack(Material.SMOKER, "&6Fluffy Macchinari")
     );
 
     private static final ItemGroup generators = new SubItemGroup(
             new NamespacedKey(FluffyMachines.getInstance(), "generators"), fluffymachines,
-            new CustomItemStack(Material.BLAST_FURNACE, "&aGenerators"), 1
+            new CustomItemStack(Material.BLAST_FURNACE, "&aGeneratori"), 1
     );
 
     private static final ItemGroup machines = new SubItemGroup(
             new NamespacedKey(FluffyMachines.getInstance(), "machines"), fluffymachines,
-            new CustomItemStack(Material.SMOKER, "&9Machines"), 2
+            new CustomItemStack(Material.SMOKER, "&9Macchinari"), 2
     );
 
     private static final ItemGroup tools = new SubItemGroup(
             new NamespacedKey(FluffyMachines.getInstance(), "tools"), fluffymachines,
-            new CustomItemStack(Material.IRON_PICKAXE, "&bTools"), 3
+            new CustomItemStack(Material.IRON_PICKAXE, "&bStrumenti"), 3
     );
 
     private static final ItemGroup multiblocks = new SubItemGroup(
             new NamespacedKey(FluffyMachines.getInstance(), "multiblocks"), fluffymachines,
-            new CustomItemStack(Material.BRICKS, "&cMultiblocks"), 4
+            new CustomItemStack(Material.BRICKS, "&cMultiblocchi"), 4
     );
 
     private static final ItemGroup fluffybarrels = new SubItemGroup(
             new NamespacedKey(FluffyMachines.getInstance(), "barrels"), fluffymachines,
-            new CustomItemStack(Material.BARREL, "&6Fluffy Barrels"), 5
+            new CustomItemStack(Material.BARREL, "&6Barili Fluffy"), 5
     );
 
     private static final ItemGroup portableChargers = new SubItemGroup(
             new NamespacedKey(FluffyMachines.getInstance(), "portable_chargers"), fluffymachines,
-            new CustomItemStack(FluffyItems.CARBONADO_PORTABLE_CHARGER, "&ePortable Chargers"), 6
+            new CustomItemStack(FluffyItems.CARBONADO_PORTABLE_CHARGER, "&eCaricatori portatili"), 6
     );
 
     private static final ItemGroup wrenches = new SubItemGroup(
             new NamespacedKey(FluffyMachines.getInstance(), "wrenches"), fluffymachines,
-            new CustomItemStack(FluffyItems.CARBONADO_FLUFFY_WRENCH, "&7Wrenches"), 7
+            new CustomItemStack(FluffyItems.CARBONADO_FLUFFY_WRENCH, "&7Chiavi"), 7
     );
 
     private static final ItemGroup cargo = new SubItemGroup(
@@ -107,7 +107,7 @@ public final class FluffyItemSetup {
 
     private static final ItemGroup misc = new SubItemGroup(
             new NamespacedKey(FluffyMachines.getInstance(), "misc"), fluffymachines,
-            new CustomItemStack(Material.HOPPER, "&8Misc"), 9
+            new CustomItemStack(Material.HOPPER, "&8Varie"), 9
     );
 
     private FluffyItemSetup() {
@@ -189,7 +189,7 @@ public final class FluffyItemSetup {
                 PortableCharger.Type.CARBONADO.chargeCapacity, PortableCharger.Type.CARBONADO.chargeSpeed
         ).register(plugin);
 
-        // Multiblocks
+        // Multiblocchi
         new CrankGenerator(generators, FluffyItems.CRANK_GENERATOR).register(plugin);
         new Foundry(multiblocks, FluffyItems.FOUNDRY).register(plugin);
         new ExpDispenser(multiblocks, FluffyItems.EXP_DISPENSER, new ItemStack[]{
@@ -198,7 +198,7 @@ public final class FluffyItemSetup {
                 null, new ItemStack(Material.DISPENSER), null
         }).register(plugin);
 
-        // Tools
+        // Strumenti
         new WateringCan(tools, FluffyItems.WATERING_CAN,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 new ItemStack(Material.IRON_INGOT), null, new ItemStack(Material.IRON_INGOT),
@@ -261,7 +261,7 @@ public final class FluffyItemSetup {
                 SlimefunItems.SYNTHETIC_DIAMOND, new ItemStack(Material.DIAMOND_SHOVEL), SlimefunItems.SYNTHETIC_DIAMOND,
         }).register(plugin);
 
-        // Machines
+        // Macchinari
         new WaterSprinkler(machines, FluffyItems.WATER_SPRINKER,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 new ItemStack(Material.IRON_INGOT), SlimefunItems.ELECTRIC_MOTOR, new ItemStack(Material.IRON_INGOT),
@@ -350,7 +350,7 @@ public final class FluffyItemSetup {
                 new ItemStack(Material.OBSIDIAN), new ItemStack(Material.OBSIDIAN), new ItemStack(Material.OBSIDIAN)
         }).register(plugin);
 
-        // Misc
+        // Varie
         new HelicopterHat(misc, FluffyItems.HELICOPTER_HAT,
                 RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[]{
                 new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT),
@@ -462,3 +462,4 @@ public final class FluffyItemSetup {
     }
 
 }
+
