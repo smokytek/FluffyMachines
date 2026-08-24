@@ -5,7 +5,6 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.core.attributes.MachineTier;
 import io.github.thebusybiscuit.slimefun4.core.attributes.MachineType;
 import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
-import io.github.thebusybiscuit.slimefun4.utils.itemstack.ColoredFireworkStar;
 import io.ncbpfluffybear.fluffymachines.items.FireproofRune;
 import io.ncbpfluffybear.fluffymachines.items.MiniBarrel;
 import io.ncbpfluffybear.fluffymachines.items.tools.FluffyWrench;
@@ -248,13 +247,13 @@ public class FluffyItems {
     );
     public static final SlimefunItemStack FIREPROOF_RUNE = new SlimefunItemStack(
             "FIREPROOF_RUNE",
-            new ColoredFireworkStar(Color.fromRGB(255, 165, 0),
-                    "&7Runa antica &8&l[&c&lIgnifuga&8&l]",
-                    "",
-                    "&eLascia cadere questa runa su un oggetto a terra per",
-                    "&erenderlo &cignifugo",
-                    ""
-            ));
+            Material.FIREWORK_STAR,
+            "&7Runa antica &8&l[&c&lIgnifuga&8&l]",
+            "",
+            "&eLascia cadere questa runa su un oggetto a terra per",
+            "&erenderlo &cignifugo",
+            ""
+    );
     public static final SlimefunItemStack SUPERHEATED_FURNACE = new SlimefunItemStack("SUPERHEATED_FURNACE",
             Material.BLAST_FURNACE,
             "&cFornace surriscaldata",
